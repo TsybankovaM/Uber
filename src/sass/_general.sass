@@ -16,14 +16,14 @@ nav
   padding: 13px 70px
   margin: 0
   list-style-type: none
-  .menu_link
+  &_link
     font-weight: 300
     font-size: 15px
     color: #FFFFFF
     text-decoration: none
     &:hover
       color: $main-color
-  .menu_item
+  &_item
     border-right: 2px dotted #000000
     padding-right: 28px
     &:last-child
@@ -37,33 +37,30 @@ nav
   width: 100%
   height: 87px
   background-color: rgba(0, 0, 0, 0.6)
-
-  .subheader_logo
+  &_logo
     display: block
     max-width: 100%
     margin-top: 16px
-
-  .subheader_official
+  &_official
     margin-top: 6px
     font-weight: 100
     font-size: 13px
     color: #FFFFFF
-
-  .subheader_call
+  &_call
     margin-top: 21px
     font-weight: 300
     font-size: 12px
     color: #FFFFFF
     text-align: right
-
-    .subheader_phone
-      font-weight: 400
-      text-transform: uppercase
-      font-size: 22px
-      text-decoration: none
-      color: #FFFFFF
-
-  .subheader_btn
+  &_phone
+    font-weight: 400
+    text-transform: uppercase
+    font-size: 22px
+    text-decoration: none
+    color: #FFFFFF
+    &:hover
+      color: #fff
+  &_btn
     margin-top: 21px
     width: 172px
     height: 46px
@@ -82,34 +79,29 @@ nav
   min-height: 800px
   background: url(../img/uber_bg.jpg) center (center / cover) no-repeat
   padding: 150px 0 135px 0
-
-h1
-  font-weight: 900
-  font-size: 60px
-  text-transform: uppercase
-  text-align: center
-  color: #FFFFFF
-  line-height: 60px
-
-h2
-  font-weight: 700
-  font-size: 36px
-  text-transform: uppercase
-  text-align: center
-  color: #FFFFFF
-  line-height: 36px
-  margin-top: 22px
-
-.promo
-  .promo_descr
+  &_header
+    font-weight: 900
+    font-size: 60px
+    text-transform: uppercase
+    text-align: center
+    color: #FFFFFF
+    line-height: 60px
+  &_subheader
+    font-weight: 700
+    font-size: 36px
+    text-transform: uppercase
+    text-align: center
+    color: #FFFFFF
+    line-height: 36px
+    margin-top: 22px
+  &_descr
     margin-top: 23px
     font-weight: 400
     font-size: 18px
     line-height: 24px
     text-align: center
     color: #FFFFFF
-
-  .promo_btn
+  &_btn
     display: block
     margin: 116px auto 0 auto
     width: 259px
@@ -125,10 +117,34 @@ h2
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     +btn_hover
     
-
 .advantages
   min-height: 850px
   padding: 20px 0 65px 0
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+  &_icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 116px
+    height: 116px
+    margin-right: 26px
+    background: #1EACC7
+    border-radius: 100%
+  &_descr
+    width: 343px
+    font-weight: 300
+    font-size: 15px
+    line-height: 21px
+    color: #202020
+  &_text
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: #1EACC7
 
 h3
   position: relative
@@ -158,7 +174,6 @@ h3.white
   background-color: #FFFFFF
   color: #070716
     
-
 .tittle
   position: relative
   margin-top: 32px
@@ -170,37 +185,6 @@ h3.white
   z-index: 2
   &_white
     color: #FFFFFF
-    
-
-.advantages
-  .advantages_block
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-top: 35px
-
-  .advantages_icon
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 116px
-    height: 116px
-    margin-right: 26px
-    background: #1EACC7
-    border-radius: 100%
-
-  .advantages_descr
-    width: 343px
-    font-weight: 300
-    font-size: 15px
-    line-height: 21px
-    color: #202020
-
-    .advantages_text
-      font-weight: 400
-      font-size: 17px
-      line-height: 21px
-      color: #1EACC7
 
 .subtittle
   position: relative
@@ -211,10 +195,8 @@ h3.white
   color: #222222
   z-index: 2
   &_white
-    color: #FFFFFF
+    color: #FFFFFF    
     
-    
-
 .mobile
   min-height: 864px
   padding: 48px 0 80px 0
@@ -404,6 +386,7 @@ h3.white
       text-decoration: none
       i
         color: #fff
+        font-style: normal
   &_links
     width: 390px
     margin: 0 auto
@@ -436,7 +419,7 @@ h3.white
       color: #1FBAD6
       margin: 16px auto 0 auto
       text-decoration: none
-      text-align: center
+      text-align: center     
 
 .xs-visible
   display: none

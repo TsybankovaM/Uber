@@ -1,68 +1,76 @@
 @media (max-width: 1200px)
-    .container
-        .menu
-            &_item
-                padding-right: 20px
-            &_link
-                font-size: 13px
-        .promo
-            &_header
-                font-size: 50px
-        .advantages
-            &_descr
-                width: 300px
-        .mobile
-            &_item
-                width: 290px
-                &_subtittle
-                    font-size: 22px
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .advantages
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 290px
+            &_subtittle
+                font-size: 22px
     .choice
         padding: 55px 0
         min-height: 840px
     .footer
-        &_wrapper>div
+        &_wrapper > div
             width: 50%
             &:nth-child(1)
                 width: 25%
             &:nth-child(3)
                 width: 25%
+                display: flex
                 justify-content: flex-end
-
-@media (max-width: 991px)
-    .container
-        .menu
-            &_item
-                padding-right: 8px
-            &_link
-                font-size: 10px
-        .subheader
-            &_logo
+        &_mobile
+            display: flex
+            a
+                margin: 0 3px
                 img
                     width: 100%
-            &_official
-                font-size: 11px
-            &_call
-                .subheader_phone
-                    font-size: 18px
-            &_btn
-                margin-top: 22px
-                height: 43px
+
+@media (max-width: 991px)
+    .tittle
+        font-size: 28px
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
                 width: 100%
-                font-size: 14px
-        .promo
-            &_header
-                font-size: 40px
-            &_subheader
-                font-size: 30px
-        .advantages
-            &_block
-                align-items: center
-                flex-direction: column
-                justify-content: flex-start
-            &_icon
-                margin-right: 0     
-            &_descr
-                margin-top: 20px
+        &_official
+            font-size: 11px
+        &_call
+            .subheader_phone
+                font-size: 18px
+        &_btn
+            margin-top: 22px
+            height: 43px
+            width: 100%
+            font-size: 14px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .advantages
+        &_block
+            align-items: center
+            flex-direction: column
+            justify-content: flex-start
+        &_icon
+            margin-right: 0     
+        &_descr
+            margin-top: 20px
+            width: 300px
     .choice
         min-height: 800px
         &_img
@@ -109,55 +117,57 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-    .container
-        .menu
-            position: fixed
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            top: 0
-            left: -100%
-            width: 50%
-            height: 100vh
-            padding: 20px 15px
-            background-color: rgba(0, 0, 0, .8)
-            transition: 0.6s all
-            &_active
-                left: 0
-            &_item
-                padding-right: 0
-                border-right: 0
-                margin: 10px 0
-            &_link
-                font-size: 20px
-        .subheader
-            &_phone
-                display: block
-                margin-top: 10px
-                font-weight: 400
-                font-size: 16px
-                text-align: center
-                text-transform: uppercase
-                color: #FFFFFF
-                text-decoration: none
-            &_btn
-                display: block
-                width: 200px
-                height: 40px
-                margin: 0 auto
-                margin-top: 6px
-        .xs-hidden
-            display: none
-        .xs-visible
+    .tittle
+        margin-top: 25px
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 20px
+    .subheader
+        &_phone
             display: block
-        .promo
-            &_header
-                line-height: 45px
-        .advantages
-            .tittle
-                font-size: 35px
-            &_descr
-                width: 300px
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            text-decoration: none
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 6px
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .promo
+        &_header
+            line-height: 45px
+    .advantages
+        padding: 40px 0
+        &_descr
+            width: 350px
+    .mobile
+        padding: 40px 0
     .choice
         min-height: 600px
         padding: 40px 0
@@ -167,63 +177,97 @@
         min-height: 450px
 
 @media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
     .menu
+        width: 85%
         &_item
             width: 100%
             text-align: center
             padding: 5px 0
         &_link
             display: block
-    .container
-        .subheader
-            &_logo
-                margin-top: 27px
-            &_official
-                display: none
-            &_phone
-                font-weight: 400
-                font-size: 12px
-                text-transform: uppercase
-                margin-top: 13px
-            &_btn
-                width: 125px
-                height: 32px
-                font-size: 10px
-                margin-top: 8px
+    .humburger
+        &:active
+            span
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(-45deg)
+                &:nth-child(3)
+                    transform: translateY(5px) rotate(45deg)
+    .subheader
+        height: 60px
+        top: 30px
+        &_logo
+            margin-top: 16px
+        &_official
+            display: none
+        &_phone
+            font-weight: 400
+            font-size: 12px
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 9px
+            margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
-        .promo_header
-            font-size: 38px
-        .promo_subheader
-            font-size: 28px
+        padding: 93px 0 25px 0
+        &_header
+            font-size: 30px
+            line-height: 35px
+            padding: 0 24px
+        &_subheader
+            font-size: 20px
+            line-height: 30x
+            padding: 0 10px
         &_descr
             display: none
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            font-size: 16px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     .tittle
         font-size: 22px
         margin-top: 20px
-    .container
-        .menu
-            width: 85%
+        line-height: 22px
     .advantages
         padding: 22px 0 36px 0
-        .advantages_block
+        &_block
             margin-top: 26px
-        .advantages_icon
+        &_icon
             width: 100px
             height: 100px
-        .advantages_descr
+        &_descr
             width: 100%
             margin-top: 27px
-        .advantages_text
+        &_text
             font-size: 16px
     .mobile
         min-height: 800px
         padding: 36px 0 40px 0
         .row
             margin-top: 30px
-        .mobile_item_subtittle
+        &_item
+            height: 254px
+            padding: 81px 40px 0 40px
+            &_subtittle
             font-size: 18px
             line-height: 31px
+            &_plus
+                bottom: 28px
+                &:hover
+                    &:before, &:after
+                        background: $main-color 
+                        
     .choice
         min-height: 390px
         padding: 25px 0 33px 0
@@ -274,11 +318,11 @@
         &_wrapper > div
             margin-bottom: 20px
             &:nth-child(1)
-            order: 2
+                order: 2
             &:nth-child(2)
-            order: 1
+                order: 1
             &:nth-child(3)
-            order: 3
+                order: 3
         &_links 
             width: 290px 
             &_main 
